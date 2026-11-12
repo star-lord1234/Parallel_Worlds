@@ -1,0 +1,105 @@
+# ==============================================================================
+# Parallel Worlds — .gitignore
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments & Packages
+.venv/
+venv/
+ENV/
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Secrets, credentials & local environment variables (NEVER commit secrets)
+.env
+.env.*
+*.env
+!.env.example
+!.env.example.*
+secrets.toml
+credentials.json
+
+# Model weights, large checkpoints & training runs
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.gguf
+*.h5
+checkpoints/
+checkpoint-*/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+.cache/
+hf_cache/
+training/output/
+training/checkpoints/
+
+# Evaluation & inference raw heavy dumps (preserve directory structure via .gitkeep)
+# artifacts/predictions/*.jsonl
+# artifacts/traces/*.jsonl
+!.gitkeep
+
+# Database temporary locks & journals (SQLite)
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.db-journal
+
+# Testing & Linting
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
